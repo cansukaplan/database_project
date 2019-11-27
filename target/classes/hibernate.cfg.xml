@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/tedarikci</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <mapping class="db.model.Hammadde"/>
+        <mapping class="db.model.Sehir"/>
+        <mapping class="db.model.Tedarikci"/>
+        <mapping class="db.model.TedarikciHammadde"/>
+        <mapping class="db.model.Ulke"/>
+        <mapping class="db.model.Uretici"/>
+        <mapping class="db.model.UreticiSatinAlinanHammadde"/>
+        <mapping class="db.model.Urun"/>
+        <mapping class="db.model.UrunHammadde"/>
+        <mapping class="db.model.Musteri"/>
+        <mapping class="db.model.MusteriTalepUrun"/>
+        <mapping class="db.model.SehirMesafe"/>
+    </session-factory>
+</hibernate-configuration>
